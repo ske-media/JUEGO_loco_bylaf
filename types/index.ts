@@ -13,6 +13,8 @@ export interface Player {
   score: number;
 }
 
+export type GameSelection = 'hub' | '5seconds'; // Ajoute d'autres jeux ici plus tard
+
 export interface GameConfig {
   timerDuration: number | null; // null = pas de timer
   wordsNeeded: number; // 3, 4 ou 5
@@ -21,6 +23,7 @@ export interface GameConfig {
 }
 
 export interface GameState {
+  currentGame: GameSelection;
   players: Player[];
   currentPlayerIndex: number;
   currentQuestion: Question | null;

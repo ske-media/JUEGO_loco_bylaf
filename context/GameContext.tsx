@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useReducer, useEffect, useCallback } from 'react';
-import { GameState, Player, Question, GameConfig } from '@/types';
+import { GameState, GameSelection, Player, Question, GameConfig } from '@/types';
 import questionsData from '@/data/questions-5s.json';
 
 interface GameContextType {
@@ -14,10 +14,13 @@ interface GameContextType {
   loadQuestion: () => void;
   startTimer: () => void;
   answerQuestion: (result: 'success' | 'failed' | 'skip') => void;
-  resetGame: () => void;
+  resetToSetup: () => void;
+  goToHub: () => void;
+  selectGame: (game: GameSelection) => void;
 }
 
 const initialState: GameState = {
+  currentGame: 'hub',
   players: [],
   currentPlayerIndex: 0,
   currentQuestion: null,
@@ -45,7 +48,9 @@ type GameAction =
   | { type: 'TICK_TIMER' }
   | { type: 'RESET_GAME' }
   | { type: 'RESET_TO_SETUP' }
-  | { type: 'TIME_UP' };
+  | { type: 'TIME_UP' }
+  | { type: 'SELECT_GAME'; payload: GameSelection }
+  | { type: 'GO_TO_HUB' };
 
 function gameReducer(state: GameState, action: GameAction): GameState {
   switch (action.type) {
@@ -146,6 +151,7 @@ function gameReducer(state: GameState, action: GameAction): GameState {
     case 'RESET_GAME':
       return {
         ...initialState,
+        currentGame: state.currentGame,
         players: state.players.map((p) => ({ ...p, score: 0 })),
         config: state.config,
         timerActive: false,
@@ -154,6 +160,17 @@ function gameReducer(state: GameState, action: GameAction): GameState {
     case 'RESET_TO_SETUP':
       return {
         ...initialState,
+        currentGame: state.currentGame,
+      };
+    case 'SELECT_GAME':
+      return {
+        ...state,
+        currentGame: action.payload,
+      };
+    case 'GO_TO_HUB':
+      return {
+        ...initialState,
+        currentGame: 'hub',
       };
     case 'TIME_UP':
       // Quand le temps est écoulé, on considère la réponse comme "failed"
@@ -327,8 +344,16 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
     [state.players, state.currentPlayerIndex, state.config.competitiveMode]
   );
 
-  const resetGame = useCallback(() => {
+  const resetToSetup = useCallback(() => {
     dispatch({ type: 'RESET_TO_SETUP' });
+  }, []);
+
+  const goToHub = useCallback(() => {
+    dispatch({ type: 'GO_TO_HUB' });
+  }, []);
+
+  const selectGame = useCallback((game: GameSelection) => {
+    dispatch({ type: 'SELECT_GAME', payload: game });
   }, []);
 
   return (
@@ -343,7 +368,9 @@ export function GameProvider({ children }: { children: React.ReactNode }) {
         loadQuestion,
         startTimer,
         answerQuestion,
-        resetGame,
+        resetToSetup,
+        goToHub,
+        selectGame,
       }}
     >
       {children}
