@@ -6,7 +6,11 @@ import Button from './Button';
 
 const THEMES = ['Culture G', 'Sexe', 'WTF'];
 
-export default function GameConfig() {
+interface GameConfigProps {
+  onBackToPlayers?: () => void;
+}
+
+export default function GameConfig({ onBackToPlayers }: GameConfigProps) {
   const { state, updateConfig, startGame } = useGame();
 
   const handleThemeToggle = (theme: string) => {
@@ -167,20 +171,34 @@ export default function GameConfig() {
           </div>
         </div>
 
-        <div className="text-center mt-6 sm:mt-8 px-4">
-          <Button 
-            onClick={handleStart} 
-            variant="orange" 
-            className="text-base sm:text-lg md:text-xl lg:text-2xl px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 w-full sm:w-auto"
-            disabled={state.players.length < 2}
-          >
-            🚀 Lancer la partie
-          </Button>
-          {state.players.length < 2 && (
-            <p className="text-orange-bright mt-3 sm:mt-4 font-mono text-xs sm:text-sm">
+        <div className="text-center mt-6 sm:mt-8 px-4 space-y-4">
+          {/* Bouton pour revenir ajouter des joueurs */}
+          {onBackToPlayers && (
+            <Button 
+              onClick={onBackToPlayers} 
+              variant="orange-dark" 
+              className="text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 w-full sm:w-auto"
+            >
+              <span className="block sm:inline">👥 Revenir aux joueurs</span>
+            </Button>
+          )}
+          
+          {/* Bouton pour lancer la partie */}
+          <div>
+            <Button 
+              onClick={handleStart} 
+              variant="orange" 
+              className="text-base sm:text-lg md:text-xl lg:text-2xl px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 w-full sm:w-auto"
+              disabled={state.players.length < 2}
+            >
+              🚀 Lancer la partie
+            </Button>
+            {state.players.length < 2 && (
+              <p className="text-orange-bright mt-3 sm:mt-4 font-mono text-xs sm:text-sm">
               ⚠️ Il faut au moins 2 joueurs pour commencer
             </p>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -4,7 +4,11 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useGame } from '@/context/GameContext';
 import Button from './Button';
 
-export default function PlayerSetup() {
+interface PlayerSetupProps {
+  onGoToConfig?: () => void;
+}
+
+export default function PlayerSetup({ onGoToConfig }: PlayerSetupProps) {
   const { state, addPlayer, removePlayer, startGame } = useGame();
   const [playerName, setPlayerName] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -130,20 +134,34 @@ export default function PlayerSetup() {
           )}
         </div>
 
-        <div className="text-center px-4">
-          <Button
-            onClick={startGame}
-            variant="orange"
-            disabled={state.players.length < 2}
-            className="text-base sm:text-lg md:text-xl lg:text-2xl px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 w-full sm:w-auto"
-          >
-            <span className="block sm:inline">🚀 C'est parti, on lance les couilles !</span>
-          </Button>
-          {state.players.length < 2 && (
-            <p className="text-orange-bright mt-4 font-mono text-sm sm:text-base">
-              Minimum 2 joueurs requis
-            </p>
+        <div className="text-center px-4 space-y-4">
+          {/* Bouton pour aller aux réglages si on a au moins 2 joueurs */}
+          {state.players.length >= 2 && onGoToConfig && (
+            <Button
+              onClick={onGoToConfig}
+              variant="orange-dark"
+              className="text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 w-full sm:w-auto"
+            >
+              <span className="block sm:inline">⚙️ Aller aux réglages</span>
+            </Button>
           )}
+          
+          {/* Bouton pour lancer directement la partie */}
+          <div>
+            <Button
+              onClick={startGame}
+              variant="orange"
+              disabled={state.players.length < 2}
+              className="text-base sm:text-lg md:text-xl lg:text-2xl px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 w-full sm:w-auto"
+            >
+              <span className="block sm:inline">🚀 C'est parti, on lance les couilles !</span>
+            </Button>
+            {state.players.length < 2 && (
+              <p className="text-orange-bright mt-4 font-mono text-sm sm:text-base">
+                Minimum 2 joueurs requis
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </div>
