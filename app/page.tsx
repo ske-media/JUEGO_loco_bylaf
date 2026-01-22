@@ -25,7 +25,7 @@ export default function Home() {
           <PlayerSetup />
           <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 z-20">
             <Button onClick={goToHub} variant="danger" className="text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2.5">
-              Retour au Hub
+              ← Retour au Hub
             </Button>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Home() {
           <GameConfig />
           <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 z-20">
             <Button onClick={goToHub} variant="danger" className="text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2.5">
-              Retour au Hub
+              ← Retour au Hub
             </Button>
           </div>
         </div>
