@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "theme": "Culture G",
+    "categorie": "Géographie",
+    "prompt": "Cite {N} putains de capitales européennes qui commencent par la lettre M.",
+    "answers_needed": 3,
+    "tags": ["voyage", "europe"]
+  },
+  {
+    "id": 2,
+    "theme": "Culture G",
+    "categorie": "Géographie",
+    "prompt": "Nomme {N} pays d'Afrique du Nord.",
+    "answers_needed": 3,
+    "tags": ["afrique", "géographie"]
+  },
+  {
+    "id": 3,
+    "theme": "Culture G",
+    "categorie": "Histoire",
+    "prompt": "Cite {N} rois de France.",
+    "answers_needed": 3,
+    "tags": ["histoire", "france"]
+  },
+  {
+    "id": 4,
+    "theme": "Culture G",
+    "categorie": "Cinéma",
+    "prompt": "Nomme {N} films avec Tom Cruise.",
+    "answers_needed": 3,
+    "tags": ["cinéma", "acteur"]
+  },
+  {
+    "id": 5,
+    "theme": "Culture G",
+    "categorie": "Musique",
+    "prompt": "Cite {N} groupes de rock français.",
+    "answers_needed": 3,
+    "tags": ["musique", "rock"]
+  },
+  {
+    "id": 6,
+    "theme": "Sexe",
+    "categorie": "Intimité",
+    "prompt": "Nomme {N} positions sexuelles.",
+    "answers_needed": 3,
+    "tags": ["sexe", "intimité"]
+  },
+  {
+    "id": 7,
+    "theme": "Sexe",
+    "categorie": "Intimité",
+    "prompt": "Cite {N} accessoires coquins.",
+    "answers_needed": 3,
+    "tags": ["sexe", "accessoires"]
+  },
+  {
+    "id": 8,
+    "theme": "Sexe",
+    "categorie": "Intimité",
+    "prompt": "Nomme {N} endroits insolites pour faire l'amour.",
+    "answers_needed": 3,
+    "tags": ["sexe", "insolite"]
+  },
+  {
+    "id": 9,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Cite {N} choses qu'on peut faire avec un pneu.",
+    "answers_needed": 3,
+    "tags": ["absurde", "créativité"]
+  },
+  {
+    "id": 10,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Nomme {N} animaux qui n'existent pas mais qui devraient exister.",
+    "answers_needed": 3,
+    "tags": ["absurde", "animaux"]
+  },
+  {
+    "id": 11,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Cite {N} super-pouvoirs inutiles mais marrants.",
+    "answers_needed": 3,
+    "tags": ["absurde", "super-pouvoirs"]
+  },
+  {
+    "id": 12,
+    "theme": "Culture G",
+    "categorie": "Géographie",
+    "prompt": "Nomme {N} océans du monde.",
+    "answers_needed": 3,
+    "tags": ["géographie", "océans"]
+  },
+  {
+    "id": 13,
+    "theme": "Culture G",
+    "categorie": "Sport",
+    "prompt": "Cite {N} sports olympiques d'hiver.",
+    "answers_needed": 3,
+    "tags": ["sport", "olympiques"]
+  },
+  {
+    "id": 14,
+    "theme": "Culture G",
+    "categorie": "Cuisine",
+    "prompt": "Nomme {N} fromages français.",
+    "answers_needed": 3,
+    "tags": ["cuisine", "fromage"]
+  },
+  {
+    "id": 15,
+    "theme": "Culture G",
+    "categorie": "Cuisine",
+    "prompt": "Cite {N} plats italiens.",
+    "answers_needed": 3,
+    "tags": ["cuisine", "italie"]
+  },
+  {
+    "id": 16,
+    "theme": "Culture G",
+    "categorie": "Animaux",
+    "prompt": "Nomme {N} animaux qui volent.",
+    "answers_needed": 3,
+    "tags": ["animaux", "vol"]
+  },
+  {
+    "id": 17,
+    "theme": "Culture G",
+    "categorie": "Animaux",
+    "prompt": "Cite {N} animaux marins.",
+    "answers_needed": 3,
+    "tags": ["animaux", "mer"]
+  },
+  {
+    "id": 18,
+    "theme": "Culture G",
+    "categorie": "Technologie",
+    "prompt": "Nomme {N} marques de smartphones.",
+    "answers_needed": 3,
+    "tags": ["technologie", "smartphone"]
+  },
+  {
+    "id": 19,
+    "theme": "Culture G",
+    "categorie": "Technologie",
+    "prompt": "Cite {N} réseaux sociaux.",
+    "answers_needed": 3,
+    "tags": ["technologie", "réseaux sociaux"]
+  },
+  {
+    "id": 20,
+    "theme": "Culture G",
+    "categorie": "Littérature",
+    "prompt": "Nomme {N} auteurs français.",
+    "answers_needed": 3,
+    "tags": ["littérature", "auteurs"]
+  },
+  {
+    "id": 21,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Cite {N} choses qu'on peut faire avec une cuillère (sauf manger).",
+    "answers_needed": 3,
+    "tags": ["absurde", "créativité"]
+  },
+  {
+    "id": 22,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Nomme {N} raisons pour lesquelles les pingouins sont suspects.",
+    "answers_needed": 3,
+    "tags": ["absurde", "humour"]
+  },
+  {
+    "id": 23,
+    "theme": "Sexe",
+    "categorie": "Intimité",
+    "prompt": "Cite {N} endroits du corps à embrasser.",
+    "answers_needed": 3,
+    "tags": ["sexe", "intimité"]
+  },
+  {
+    "id": 24,
+    "theme": "Sexe",
+    "categorie": "Intimité",
+    "prompt": "Nomme {N} préliminaires.",
+    "answers_needed": 3,
+    "tags": ["sexe", "préliminaires"]
+  },
+  {
+    "id": 25,
+    "theme": "Culture G",
+    "categorie": "Géographie",
+    "prompt": "Cite {N} villes françaises qui commencent par L.",
+    "answers_needed": 3,
+    "tags": ["géographie", "france"]
+  },
+  {
+    "id": 26,
+    "theme": "Culture G",
+    "categorie": "Géographie",
+    "prompt": "Nomme {N} montagnes célèbres.",
+    "answers_needed": 3,
+    "tags": ["géographie", "montagnes"]
+  },
+  {
+    "id": 27,
+    "theme": "Culture G",
+    "categorie": "Sport",
+    "prompt": "Cite {N} sports de combat.",
+    "answers_needed": 3,
+    "tags": ["sport", "combat"]
+  },
+  {
+    "id": 28,
+    "theme": "Culture G",
+    "categorie": "Sport",
+    "prompt": "Nomme {N} équipes de foot françaises.",
+    "answers_needed": 3,
+    "tags": ["sport", "football"]
+  },
+  {
+    "id": 29,
+    "theme": "Culture G",
+    "categorie": "Cinéma",
+    "prompt": "Cite {N} films de science-fiction.",
+    "answers_needed": 3,
+    "tags": ["cinéma", "sci-fi"]
+  },
+  {
+    "id": 30,
+    "theme": "Culture G",
+    "categorie": "Cinéma",
+    "prompt": "Nomme {N} actrices françaises.",
+    "answers_needed": 3,
+    "tags": ["cinéma", "actrices"]
+  },
+  {
+    "id": 31,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Cite {N} choses qu'on peut faire avec un parapluie (sauf se protéger de la pluie).",
+    "answers_needed": 3,
+    "tags": ["absurde", "créativité"]
+  },
+  {
+    "id": 32,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Nomme {N} raisons pour lesquelles les chats dominent le monde.",
+    "answers_needed": 3,
+    "tags": ["absurde", "humour"]
+  },
+  {
+    "id": 33,
+    "theme": "Sexe",
+    "categorie": "Intimité",
+    "prompt": "Cite {N} endroits romantiques pour un rendez-vous.",
+    "answers_needed": 3,
+    "tags": ["sexe", "romance"]
+  },
+  {
+    "id": 34,
+    "theme": "Culture G",
+    "categorie": "Cuisine",
+    "prompt": "Nomme {N} fruits exotiques.",
+    "answers_needed": 3,
+    "tags": ["cuisine", "fruits"]
+  },
+  {
+    "id": 35,
+    "theme": "Culture G",
+    "categorie": "Cuisine",
+    "prompt": "Cite {N} boissons alcoolisées.",
+    "answers_needed": 3,
+    "tags": ["cuisine", "alcool"]
+  },
+  {
+    "id": 36,
+    "theme": "Culture G",
+    "categorie": "Animaux",
+    "prompt": "Nomme {N} animaux de la savane.",
+    "answers_needed": 3,
+    "tags": ["animaux", "savane"]
+  },
+  {
+    "id": 37,
+    "theme": "Culture G",
+    "categorie": "Animaux",
+    "prompt": "Cite {N} animaux qui hibernent.",
+    "answers_needed": 3,
+    "tags": ["animaux", "hibernation"]
+  },
+  {
+    "id": 38,
+    "theme": "Culture G",
+    "categorie": "Technologie",
+    "prompt": "Nomme {N} consoles de jeux vidéo.",
+    "answers_needed": 3,
+    "tags": ["technologie", "jeux vidéo"]
+  },
+  {
+    "id": 39,
+    "theme": "Culture G",
+    "categorie": "Technologie",
+    "prompt": "Cite {N} navigateurs web.",
+    "answers_needed": 3,
+    "tags": ["technologie", "internet"]
+  },
+  {
+    "id": 40,
+    "theme": "Culture G",
+    "categorie": "Littérature",
+    "prompt": "Nomme {N} héros de romans.",
+    "answers_needed": 3,
+    "tags": ["littérature", "héros"]
+  },
+  {
+    "id": 41,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Cite {N} choses qu'on peut faire avec une chaussette (sauf la mettre au pied).",
+    "answers_needed": 3,
+    "tags": ["absurde", "créativité"]
+  },
+  {
+    "id": 42,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Nomme {N} super-vilains qui ont échoué.",
+    "answers_needed": 3,
+    "tags": ["absurde", "humour"]
+  },
+  {
+    "id": 43,
+    "theme": "Sexe",
+    "categorie": "Intimité",
+    "prompt": "Cite {N} endroits pour un premier baiser.",
+    "answers_needed": 3,
+    "tags": ["sexe", "romance"]
+  },
+  {
+    "id": 44,
+    "theme": "Culture G",
+    "categorie": "Géographie",
+    "prompt": "Nomme {N} îles célèbres.",
+    "answers_needed": 3,
+    "tags": ["géographie", "îles"]
+  },
+  {
+    "id": 45,
+    "theme": "Culture G",
+    "categorie": "Géographie",
+    "prompt": "Cite {N} fleuves français.",
+    "answers_needed": 3,
+    "tags": ["géographie", "fleuves"]
+  },
+  {
+    "id": 46,
+    "theme": "Culture G",
+    "categorie": "Sport",
+    "prompt": "Nomme {N} sports nautiques.",
+    "answers_needed": 3,
+    "tags": ["sport", "eau"]
+  },
+  {
+    "id": 47,
+    "theme": "Culture G",
+    "categorie": "Sport",
+    "prompt": "Cite {N} sports extrêmes.",
+    "answers_needed": 3,
+    "tags": ["sport", "extrême"]
+  },
+  {
+    "id": 48,
+    "theme": "Culture G",
+    "categorie": "Cinéma",
+    "prompt": "Nomme {N} films d'horreur.",
+    "answers_needed": 3,
+    "tags": ["cinéma", "horreur"]
+  },
+  {
+    "id": 49,
+    "theme": "Culture G",
+    "categorie": "Cinéma",
+    "prompt": "Cite {N} réalisateurs célèbres.",
+    "answers_needed": 3,
+    "tags": ["cinéma", "réalisateurs"]
+  },
+  {
+    "id": 50,
+    "theme": "WTF",
+    "categorie": "Absurde",
+    "prompt": "Nomme {N} choses qu'on peut faire avec un rouleau de papier toilette (sauf s'essuyer).",
+    "answers_needed": 3,
+    "tags": ["absurde", "créativité"]
+  }
+]
